@@ -1,5 +1,5 @@
 
-# Thesis - Master Experimental Psychology - Ghent university
+# Pricing: a behavioral approach
 
 [![GitHub license](https://img.shields.io/apm/l/test.svg)](https://github.com/CogComNeuroSci/Pieter_H/blob/master/LICENSE)
 [![Python version](https://img.shields.io/badge/Python-3.7.0-blue.svg)](https://img.shields.io/badge/Python-3.7.0-blue.svg)
