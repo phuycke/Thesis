@@ -146,9 +146,3 @@ Fax: &nbsp;&nbsp;&nbsp;&nbsp;+32 (0)9 264 64 96
 ---
 
 **Last edit: 21-01-2019**  
-
-
-
-```python
-
-```
