@@ -1,6 +1,5 @@
 
-# Thesis
-## First master Experimental Psychology - Ghent university
+# Thesis - Master Experimental Psychology - Ghent university
 
 [![GitHub license](https://img.shields.io/apm/l/test.svg)](https://github.com/CogComNeuroSci/Pieter_H/blob/master/LICENSE)
 [![Python version](https://img.shields.io/badge/Python-3.7.0-blue.svg)](https://img.shields.io/badge/Python-3.7.0-blue.svg)
@@ -54,14 +53,29 @@ The code directory contains _three_ different subfolders:
 
 __Folder outline__:
 
-* [... - 01][exp1]
-    * Contains all the versions of the used Python script
-* [... - 02][exp2]:
-    * Used to create stimulus datasets
-        * These datasets are used to determine stimulus order, presentation ...
+* [... - 01][exp01]
+    * Bundle.R
+    * Clean and plot.R
+    * Analyse.R
+* [... - 02][exp02]:
+    * Bundle.R
+    * Clean.R
+    * Plot.R
+    * Analyse.R
 * [... - forms][forms]:
-    * Automatisation: serial execution of the scripts located in the "create datasets" directory
-    * This yields as an advantage that we can create n datasets (with n = the number of participants)
+    * Clean and plot.R
+
+_Bundle_   
+Loop over the different separate data files, and bundle them together to read them in as one large file.   
+
+_Clean_   
+Clean the dataset by removing outliers, looking at the data, removing odd observations, making new variables based on other variables ...
+
+_Plot_   
+Create plots based on the cleaned data, plots can be saved automatically
+
+_Analyse_   
+Perform actual analysis on the data and formulate conclusions
 
 [exp01]: https://github.com/phuycke/Thesis/tree/master/Analyse/Offline%20data%20-%20experiment%2001
 [exp02]: https://github.com/phuycke/Thesis/tree/master/Analyse/Offline%20data%20-%20experiment%2002
@@ -69,32 +83,32 @@ __Folder outline__:
 
 ---
 
-`test`:  
+## Programming information
 
----
+We used [PsychoPy3][psycho] as main programming language.  
 
-## The programming part
-
-We used `Python 3` (version 3.7.0) as main programming language.  
-As editor, we opted for `Spyder` (version 3.3.2) integrated in the [Anaconda environment][Anaconda].  
-
-[Anaconda]: https://www.anaconda.com/download/
+[psycho]: http://www.psychopy.org/installation.html
 
 __Required modules__:
 
-    * matplotlib.pyplot (2.2.3) 
-    * numpy (1.15.1)
+    * __future__
+    * csv
+    * datetime
+    * functools
+    * math
+    * numpy
     * os
+    * pandas
+    * psychopy
+    * random
+    * sys
     * time
-    * warnings
+    * webbrowser
 
-All can be installed in the _Anaconda environment_ by typing the following the _Anaconda prompt_:  
-`conda install moduleName`
+All can be installed in your _Python environment_ by using _pip_:  
+`pip install moduleName`
 
-_All three Python scripts are needed for a successful simulation run!_  
-
-
-## Conclusion
+_Version 6 is a stable version and can be executed without issues on a Windows computer_  
 
 
 ## Author
@@ -131,7 +145,7 @@ Fax: &nbsp;&nbsp;&nbsp;&nbsp;+32 (0)9 264 64 96
 
 ---
 
-**Last edit: 16-01-2019**  
+**Last edit: 21-01-2019**  
 
 
 
