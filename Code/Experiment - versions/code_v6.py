@@ -10,27 +10,20 @@ the code now has a delay of 1.5 SD
 
 #####################################################################################################
 
-from __future__ import division
-from psychopy import core, visual, event
-
-from random import randint
-from random import randrange, uniform
-from random import shuffle
-
-import random
+import csv
 import datetime
 import functools
-import time
-import datetime
-import numpy as np
-import pandas as pd
 import math
-
+import numpy    as np
 import os 
-import csv
+import pandas   as pd
+import time
 import sys
-
 import webbrowser
+
+from __future__ import division
+from psychopy   import core, visual, event
+from random     import randint, randrange, shuffle, uniform
 
 #######################################################################################################################################################################################
 
